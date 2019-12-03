@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.activity.WeatherActivity">
+
+    <LinearLayout
+            android:onClick="checkWeatherDetail"
+            android:id="@+id/weatherDetailLl"
+            android:visibility="visible"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:background="@color/title_color"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+                android:text="WeatherInfo"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="40dp"/>
+
+        <TextView
+                android:id="@+id/dateTv"
+                android:text="@string/default_text"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+
+        <TextView
+                android:id="@+id/iconTv"
+                android:text="@string/default_text"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+        <TextView
+                android:id="@+id/highTempTv"
+                android:text="@string/default_text"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+        <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/lowTempTv"
+                android:text="@string/default_text"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">WeatherDemo</string>
+    <string name="by_location">byLocation</string>
+    <string name="location_permission_reminder">Please kindly grant the location for weather.</string>
+    <string name="hourly_weather"><b>Hourly Weather</b></string>
+    <string name="unsupport_location">This don not support location serach.</string>
+    <string name="search_failure_reminder">Search Failure this time</string>
+    <string name="low_temp">%s℃</string>
+    <string name="high_temp">%s℃</string>
+    <string name="default_text">"--"</string>
+
+</resources>
