@@ -20,8 +20,8 @@ android{
         applicationId = "com.test.weatherdemo"
         //属性和函数的方式
         minSdkVersion(23)
-//        targetSdk = 32
-        targetSdkVersion(32)
+        targetSdk = 32
+//        targetSdkVersion(32)
         versionCode = 1
         versionName = "1.0"
 
@@ -47,15 +47,15 @@ android{
     // test 这快还可以设置很多
     testOptions {
         unitTests {
-//            isIncludeAndroidResources = true
+            isIncludeAndroidResources = true
         }
         unitTests.apply {
-//            all {
-//                isReturnDefaultValues = true
-//                it.maxParallelForks = 4
-//                it.maxHeapSize = "4096m"
-//                it.jvmArgs = listOf("-XX:MaxPermSize=2048m", "-noverify")
-//            }
+            all {
+                isReturnDefaultValues = true
+                it.maxParallelForks = 4
+                it.maxHeapSize = "4096m"
+                it.jvmArgs = listOf("-XX:MaxPermSize=2048m", "-noverify")
+            }
         }
     }
 

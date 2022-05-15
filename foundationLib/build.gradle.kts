@@ -18,11 +18,11 @@ android{
     defaultConfig{
         //属性和函数的方式
         minSdkVersion(23)
-//        targetSdk = 32
-        targetSdkVersion(32)
+        targetSdk = 32
+//        targetSdkVersion(32)
         versionCode = 1
         versionName = "1.0"
-//        testInstrumentationRunner = "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner = "android.support.test.runner.AndroidJUnitRunner"
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
@@ -46,12 +46,12 @@ android{
 //            isIncludeAndroidResources = true
         }
         unitTests.apply {
-//            all {
-//                isReturnDefaultValues = true
-//                it.maxParallelForks = 4
-//                it.maxHeapSize = "4096m"
-//                it.jvmArgs = listOf("-XX:MaxPermSize=2048m", "-noverify")
-//            }
+            all {
+                isReturnDefaultValues = true
+                it.maxParallelForks = 4
+                it.maxHeapSize = "4096m"
+                it.jvmArgs = listOf("-XX:MaxPermSize=2048m", "-noverify")
+            }
         }
     }
 
