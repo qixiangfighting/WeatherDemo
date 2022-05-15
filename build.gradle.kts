@@ -40,7 +40,7 @@ allprojects {
     }
 }
 
-//为什么可以这样写，这个tasks方法调用没有看到要传一个TaskContainerScope的扩展函数
+//todo 为什么可以这样写，这个tasks方法调用没有看到要传一个TaskContainerScope的扩展函数
 tasks {
     val clean by registering(Delete::class){
         delete(buildDir)

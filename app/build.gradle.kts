@@ -1,3 +1,10 @@
+//Convert Grovy gradle to kotlin kts rerfer to
+// todo buildSrc是做什么的？，如何基于kts写 plugin 乃至于 transform
+//https://juejin.cn/post/6974277501228941319,
+// https://juejin.cn/post/6844904050798886919,
+// https://juejin.cn/post/6844903667326255112,
+// https://docs.gradle.org/current/userguide/kotlin_dsl.html
+
 plugins {
     id("com.android.application")
     id("kotlin-android")
@@ -6,7 +13,7 @@ plugins {
     id("com.google.gms.google-services")
 }
 
-// 如何抽取成可以公用的
+// todo 如何抽取成可以公用的
 val kotlin_version = "1.6.21"
 val retrofit_version = "2.9.0"
 val okhttp3_version = "4.9.3"

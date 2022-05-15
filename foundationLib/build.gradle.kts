@@ -43,7 +43,7 @@ android{
     // test 这快还可以设置很多
     testOptions {
         unitTests {
-//            isIncludeAndroidResources = true
+            isIncludeAndroidResources = true
         }
         unitTests.apply {
             all {
