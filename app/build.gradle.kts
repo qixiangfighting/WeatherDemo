@@ -66,6 +66,8 @@ android{
         }
     }
 
+    namespace = "com.test.weatherdemo"
+
 }
 
 dependencies{

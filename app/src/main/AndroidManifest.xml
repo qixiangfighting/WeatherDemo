@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
-          package="com.test.weatherdemo">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
 
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <application
-            android:name=".MainApplication"
+            android:name="com.test.weatherdemo.MainApplication"
             android:allowBackup="true"
             android:icon="@mipmap/ic_launcher"
             android:label="@string/app_name"
@@ -16,7 +15,7 @@
             android:theme="@style/AppTheme"
             tools:ignore="AllowBackup,GoogleAppIndexingWarning">
         <activity
-                android:name=".ui.activity.WeatherActivity"
+                android:name="com.test.weatherdemo.ui.activity.WeatherActivity"
                 android:launchMode="singleTask"
                 android:screenOrientation="portrait"
             android:exported="true">
@@ -26,7 +25,7 @@
             </intent-filter>
         </activity>
         <activity
-                android:name=".ui.activity.WeatherDetailActivity"
+                android:name="com.test.weatherdemo.ui.activity.WeatherDetailActivity"
                 android:screenOrientation="portrait"/>
     </application>
 

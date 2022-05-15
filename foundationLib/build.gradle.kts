@@ -20,8 +20,6 @@ android{
         minSdkVersion(23)
         targetSdk = 32
 //        targetSdkVersion(32)
-        versionCode = 1
-        versionName = "1.0"
         testInstrumentationRunner = "android.support.test.runner.AndroidJUnitRunner"
     }
     compileOptions {
@@ -54,6 +52,7 @@ android{
             }
         }
     }
+    namespace = "com.test.foundationlib"
 
 }
 
