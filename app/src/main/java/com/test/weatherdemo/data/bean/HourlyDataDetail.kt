@@ -23,8 +23,8 @@ data class HourlyDataDetail (
     var ozone: Double) : Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readLong(),
-        parcel.readString(),
-        parcel.readString(),
+        parcel.readString()!!,
+        parcel.readString()!!,
         parcel.readDouble(),
         parcel.readDouble(),
         parcel.readDouble(),

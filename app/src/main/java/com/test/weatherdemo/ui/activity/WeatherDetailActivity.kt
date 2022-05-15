@@ -21,8 +21,8 @@ class WeatherDetailActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_recent_search)
         val datas = intent.getParcelableArrayListExtra<HourlyDataDetail>(Constant.HOURLY_DATA)
-        this.timeZone = intent.getStringExtra(Constant.TIME_ZONE)
-        this.hourlyDatas = datas.toMutableList()
+        this.timeZone = intent.getStringExtra(Constant.TIME_ZONE)!!
+        this.hourlyDatas = datas!!.toMutableList()
         initView()
     }
 

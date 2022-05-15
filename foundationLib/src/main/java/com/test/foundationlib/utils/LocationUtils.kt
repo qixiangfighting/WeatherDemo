@@ -30,18 +30,9 @@ object LocationUtils {
         mLocationManager = context.getSystemService(Context.LOCATION_SERVICE) as LocationManager
         val lastKnownLocation = mLocationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER)
 
-        mLocationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0L, 0F, object : LocationListener {
-            override fun onLocationChanged(location: Location?) {
+        mLocationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0L, 0F, object : LocationListener{
+            override fun onLocationChanged(p0: Location) {
 
-            }
-
-            override fun onStatusChanged(provider: String?, status: Int, extras: Bundle?) {
-            }
-
-            override fun onProviderEnabled(provider: String?) {
-            }
-
-            override fun onProviderDisabled(provider: String?) {
             }
         })
 

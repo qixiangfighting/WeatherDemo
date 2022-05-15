@@ -15,11 +15,11 @@ apply plugin: 'com.google.gms.google-services'
 //    }
 //}
 android {
-    compileSdkVersion 28
+    compileSdkVersion 32
     defaultConfig {
         applicationId "com.test.weatherdemo"
         minSdkVersion 23
-        targetSdkVersion 28
+        targetSdkVersion 32
         versionCode 1
         versionName "1.0"
     }
@@ -27,7 +27,7 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    kotlinOptions { jvmTarget = 1.8 }
+//    kotlinOptions { jvmTarget = 1.8 }
     buildTypes {
         release {
             minifyEnabled false

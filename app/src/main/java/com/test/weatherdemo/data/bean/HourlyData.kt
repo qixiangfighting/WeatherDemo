@@ -10,9 +10,9 @@ data class HourlyData(
     var data: List<HourlyDataDetail>
 ) : Parcelable {
     constructor(parcel: Parcel) : this(
-        parcel.readString(),
-        parcel.readString(),
-        parcel.createTypedArrayList(HourlyDataDetail)
+        parcel.readString()!!,
+        parcel.readString()!!,
+        parcel.createTypedArrayList(HourlyDataDetail)!!
     ) {
     }
 
