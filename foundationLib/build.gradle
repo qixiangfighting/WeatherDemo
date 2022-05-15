@@ -3,23 +3,23 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 
-configurations.all {
-    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
-        def requested = details.requested
-        if (requested.group == 'com.android.support') {
-            if (!requested.name.startsWith("multidex")) {
-                details.useVersion '27.1.1'
-            }
-        }
-    }
-}
+//configurations.all {
+//    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+//        def requested = details.requested
+//        if (requested.group == 'com.android.support') {
+//            if (!requested.name.startsWith("multidex")) {
+//                details.useVersion '27.1.1'
+//            }
+//        }
+//    }
+//}
 android {
-    compileSdkVersion 27
+    compileSdkVersion 28
 
 
     defaultConfig {
-        minSdkVersion 19
-        targetSdkVersion 27
+        minSdkVersion 23
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
 
@@ -41,8 +41,6 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
 
-    api "com.android.support:appcompat-v7:$rootProject.support_version"
-    api "com.android.support:recyclerview-v7:$rootProject.support_version"
 
     // Kotlin Library
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$rootProject.kotlin_version"
@@ -66,6 +64,7 @@ dependencies {
 
     //Dagger2
     api "com.google.dagger:dagger:$rootProject.dagger_version"
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
     kapt "com.google.dagger:dagger-compiler:$rootProject.dagger_version"
 
 

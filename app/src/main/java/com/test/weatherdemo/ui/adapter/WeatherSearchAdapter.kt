@@ -1,10 +1,10 @@
 package com.test.weatherdemo.ui.adapter
 
 import android.content.Context
-import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
 import com.test.foundationlib.ui.adapter.BaseRecyclerViewAdapter
 import com.test.foundationlib.utils.DateUtils
 import com.test.foundationlib.utils.DateUtils.FORMAT_SHORT_SPE_

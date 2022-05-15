@@ -1,7 +1,7 @@
 package com.test.weatherdemo.ui.activity
 
 import android.os.Bundle
-import android.support.v7.widget.LinearLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.kotlin.base.ui.activity.BaseActivity
 import com.test.weatherdemo.R
 import com.test.weatherdemo.common.Constant

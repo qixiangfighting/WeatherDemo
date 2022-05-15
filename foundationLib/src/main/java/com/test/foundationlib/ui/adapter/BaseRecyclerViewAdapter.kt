@@ -1,7 +1,7 @@
 package com.test.foundationlib.ui.adapter
 
 import android.content.Context
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 
 /**
  * Base RecyclerViewAdapter
