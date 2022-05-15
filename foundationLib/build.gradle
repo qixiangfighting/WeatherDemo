@@ -42,8 +42,9 @@ dependencies {
 
 
 
-    // Kotlin Library
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$rootProject.kotlin_version"
+    // Kotlin Library 这个可以删除了
+    //https://blog.csdn.net/yuzhiqiang_1993/article/details/115457783?spm=1001.2014.3001.5501
+//    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.6.21"
 
 
     //RxAndroid
