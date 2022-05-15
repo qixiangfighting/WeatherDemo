@@ -1,1 +1,8 @@
 Weather Demo App created by Summer.
+
+1. 改造这个小项目，用来做各种实验
+2. plugin实验
+3. webview
+4. kotlin gradle改造
+5.koin
+6. Unitest

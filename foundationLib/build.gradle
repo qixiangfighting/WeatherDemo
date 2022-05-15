@@ -59,7 +59,7 @@ dependencies {
 
     //OkHttp3
     implementation "com.squareup.okhttp3:okhttp:$rootProject.okhttp3_version"
-    implementation "com.squareup.okhttp3:logging-interceptor:$rootProject.okhttp3_version"
+    implementation "com.squareup.okhttp3:logging-interceptor:$rootProject.okhttp3_logger_version"
 
 
     //Dagger2
@@ -74,7 +74,7 @@ dependencies {
     implementation "com.trello.rxlifecycle2:rxlifecycle-components:$rootProject.rxlifecycle_version"
 
 
-    testImplementation 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }

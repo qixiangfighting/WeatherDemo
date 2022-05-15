@@ -2,8 +2,9 @@
 
 buildscript {
     ext.kotlin_version = '1.6.21'
-    ext.retrofit_version = '2.5.0'
-    ext.okhttp3_version = '3.8.0'
+    ext.retrofit_version = '2.9.0'
+    ext.okhttp3_version = '4.9.3'
+    ext.okhttp3_logger_version = '4.9.3'
     ext.dagger_version = '2.16'
     ext.rxlifecycle_version = '2.2.1'
     repositories {
