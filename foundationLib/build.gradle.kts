@@ -14,11 +14,11 @@ val dagger_version = "2.16"
 val rxlifecycle_version = "2.2.1"
 
 android{
-    compileSdkVersion(32)
+    compileSdkVersion(AppConfig.compileSdkVersion)
     defaultConfig{
         //属性和函数的方式
-        minSdkVersion(23)
-        targetSdk = 32
+        minSdkVersion(AppConfig.miniSdkVersion)
+        targetSdk = AppConfig.targetSdkVersion
 //        targetSdkVersion(32)
         testInstrumentationRunner = "android.support.test.runner.AndroidJUnitRunner"
     }

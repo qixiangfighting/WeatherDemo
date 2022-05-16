@@ -22,11 +22,11 @@ val dagger_version = "2.16"
 val rxlifecycle_version = "2.2.1"
 
 android{
-    compileSdkVersion(32)
+    compileSdkVersion(AppConfig.compileSdkVersion)
     defaultConfig{
         applicationId = "com.test.weatherdemo"
         //属性和函数的方式
-        minSdkVersion(23)
+        minSdkVersion(AppConfig.miniSdkVersion)
         targetSdk = 32
 //        targetSdkVersion(32)
         versionCode = 1
